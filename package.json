@@ -1,0 +1,21 @@
+{
+  "name": "smart-campus",
+  "version": "1.0.0",
+  "description": "Smart Campus — Full-stack college management platform",
+  "private": true,
+  "workspaces": ["backend", "frontend", "mobile"],
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:mobile": "cd mobile && npx expo start",
+    "install:all": "cd backend && npm install && cd ../frontend && npm install && cd ../mobile && npm install",
+    "seed": "cd backend && npm run seed",
+    "build:frontend": "cd frontend && npm run build",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm start"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
